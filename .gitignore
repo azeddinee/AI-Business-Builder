@@ -90,3 +90,15 @@ main.ts
 # Example files (keep them but ignore local overrides)
 !.env.example
 !.env.production.example
+
+# Local runtime state, browser profiles, sessions and generated databases
+.runtime/
+**/.runtime/
+**/storage-state.json
+**/playwright/.auth/
+**/browser-sessions/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.sqlite-journal
